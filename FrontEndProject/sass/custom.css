@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.social-item {
+  font-size: 18px;
+  padding: 10px;
+  margin-left: 2em;
+}
+
+.social-item a {
+  color: #888;
+  margin-left: 13px;
+}
+
+.social-item a i:hover {
+  color: #f4511e;
+}
+
+.topbar-child2 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-right: 38px;
+}
+
+.topbar-child2 .topbar-email {
+  font-family: Montserrat-Regular;
+  font-size: 15px;
+  color: #888;
+  line-height: 2.7;
+  margin-right: 25px;
+}
+
+.topbar-child2 .money {
+  outline: none;
+  border: transparent;
+  background: transparent;
+}
+
+.logo {
+  margin-left: 3.5em;
+  left: 52px;
+  top: 50%;
+}
+
+.header-icons-noti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #111;
+  color: #fff;
+  font-family: Montserrat-Medium;
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  right: 113px;
+}
+/*# sourceMappingURL=custom.css.map */

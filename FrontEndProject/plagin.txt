@@ -1,0 +1,12 @@
+https://github.com/TuralSuleymani/ProgrammingTasksForMereMortals
+pretty checkbox
+sweetalert
+select2
+tokenfield for bootstrap
+animate.css
+aos - animate on scroll
+lightbox2
+loading.io
+owlcarousel2
+timeago.io
+ckeeditor
