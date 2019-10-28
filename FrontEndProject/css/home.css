@@ -70,3 +70,26 @@
   .dropdown:hover .dropdown-content {display: inline-block;}
   
   .dropdown:hover .dropbtn {background-color: white;}
+  #totop {
+    /* padding: 20px 10px; */
+    outline: none;
+    text-decoration: none;
+  }
+  #totop .fas {
+    font-size: 34px;
+    position: fixed;
+    width: 40px;
+    height: 35px;
+    bottom: 50px;
+    text-align: center;
+    right: 0px;
+    background-color: black;
+    color: white;
+  }
+  
+  
+  
+  
+  html {
+    scroll-behavior: smooth;
+  }

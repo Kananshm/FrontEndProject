@@ -432,11 +432,23 @@ footer .email input {
 }
 
 .headerPage2 .header-icons-noti {
-  right: 11%;
+  right: 16%;
   top: 22%;
 }
 
 .headerPage2 .logo {
-  margin-left: 11em;
+  margin-left: 15em;
+}
+
+.secStep img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.frstpic img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=custom.css.map */
