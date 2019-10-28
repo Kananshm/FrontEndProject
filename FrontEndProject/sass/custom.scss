@@ -19,7 +19,7 @@
 
 .topbar-child2 {
   position: absolute;
-  height: 100%;
+  height: 90%;
   top: 0;
   right: 0;
   display: flex;
@@ -191,20 +191,22 @@
     }
          .tms{
            position: absolute;
-           top:75%;
+           top:88%;
            left: 25%;
            width: 50%;
            margin: auto;
 
            p{
-             border: 1px solid black;
+             border: 1px solid #dbdbdb;
              width: 2.6em;
              padding:4px;
              text-align: center;
-             font-family: Montserrat-Regular;
+             font-family:" Montserrat-Regular";
              font-size: 1.2em;
              color: #555555;
              line-height: 1;
+              color: #999;
+             
 }
            }
          }
@@ -214,7 +216,7 @@
     }
     .cllctn {
       position: absolute;
-      top: 55%;
+      top: 45%;
       left: 22%;
       text-align: center;
       p {
@@ -241,7 +243,180 @@
       }
     }
   }
+  .dollar{
+    position: absolute;
+    top: 61%;
+      left: 38%;
+    a{
+     font-family: Montserrat-Regular;
+      font-size: 15px;
+      color: #555;
+      line-height: 1.5;
+      text-decoration: none;
+     &:hover
+     {
+      color: #f4511e;
+     }
+    } 
+    s{
+      font-family : "Montserrat-Regular";
+      font-size: 20px;
+      color: #555;
+      text-transform: uppercase;
+      text-decoration: line-through;
+    }
+    p{
+      font-family: Montserrat-Regular;
+      font-size: 20px;
+      color: #e65540;
+      text-transform: uppercase;
+    } 
+  }
+
+  .hhh{
+    font-family: Montserrat-Bold;
+    font-size: 30px;
+    color: #222;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+  }
+ .ourBlog{
+   
+   h4{
+     a{
+      font-family: 'Montserrat-Medium';
+      font-size: 0.8em;
+      color: #333;
+      line-height: 1.3;
+      text-decoration: none;
+      &:hover{
+        color: red;
+      }
+     }
+   }
+   p{
+     font-family: Montserrat-Regular;
+     font-size: 0.9em;
+     color: #555;
+     line-height: 1.8;
+     span{
+      font-family:'Montserrat-Regular';
+      font-size: 0.9em;
+      color: #999;
+      line-height: 1.8;
+     }
+
+   }
+   .ppp{
+    font-family: Montserrat-Regular;
+    font-size: 0.9em;
+    color: #888;
+    line-height: 1.2;
+   }
+ }
+
+ .col{
+   padding: 0;
+   img{
+     width: 100%;
+     object-fit: cover;
+   }
+   
+ }
+
+
+
+
+
+
+
+ footer {
+  background: #dbdbdb;
+  .get-in-touch {
+    p {
+      font-family: 'Montserrat-Regular';
+      font-size: 0.9em;
+      color: #555;
+      line-height: 1.8;
+    }
+  }
+
+  li {
+    padding: 0.3em;
+    color: #888888;
+    font-size: 1em;
+    list-style: none;
+    i {
+      font-size: 1em;
+      color: #888888;
+    }
+    i:hover {
+      transition-duration: 0.5s;
+      color: #e67e22;
+      cursor: pointer;
+    }
+  }
+  li:hover {
+    transition-duration: 0.5s;
+    color: chocolate;
+    cursor: pointer;
+  }
+  .email {
+    button {
+      width: 53%;
+      height: 3em;
+      border-radius: 3em;
+      outline: none;
+
+    }
+    button:hover {
+      transition-duration: 0.5s;
+      background: #e67e22;
+      cursor: pointer;
+    }
+    input {
+      width: 50%;
+      border: none;
+      border-bottom: 1px solid grey;
+      outline: none;
+      background: transparent;
+    }
+  }
 }
+
+
+.headerPage2{
+  .topbar-child1{
+  color: white;
+  a{
+    color: white;
+     
+  }
+  }
+  
+   .topbar-child2{
+     position: static;
+     right: 30%;
+   }
+   .header-icons-noti{
+     right: 11%;
+     top: 22%;
+   }
+.logo{
+  margin-left: 11em;
+}
+}
+
+
+
+
+
+
+
+
+
+
 
 // .bbb{
 //     transition-duration: 0.5s;
