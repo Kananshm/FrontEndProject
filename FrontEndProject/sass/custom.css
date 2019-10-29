@@ -317,7 +317,7 @@
 }
 
 .ourBlog h4 a {
-  font-family: 'Montserrat-Medium';
+  font-family: "Montserrat-Medium";
   font-size: 0.8em;
   color: #333;
   line-height: 1.3;
@@ -336,7 +336,7 @@
 }
 
 .ourBlog p span {
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-size: 0.9em;
   color: #999;
   line-height: 1.8;
@@ -364,7 +364,7 @@ footer {
 }
 
 footer .get-in-touch p {
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-size: 0.9em;
   color: #555;
   line-height: 1.8;
@@ -450,5 +450,69 @@ footer .email input {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.hompg3 a:hover {
+  color: #888888;
+}
+
+.hompg3 li {
+  list-style: none;
+}
+
+.hompg3 a {
+  color: #888888;
+}
+
+.hompg3 ul {
+  padding: 0;
+  margin: 0;
+}
+
+.hompg3 nav li {
+  padding-top: 0.7em;
+}
+
+.hompg3 .social li {
+  padding: 0 1em 0 0;
+  font-size: 20px;
+}
+
+.hompg3 .sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.hompg3 .icon a {
+  padding: 1em;
+}
+
+.hompg3 .icon .backet {
+  position: relative;
+}
+
+.hompg3 .icon span {
+  position: absolute;
+  left: 1.9em;
+}
+
+.mainpagethird img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mainpagethird h2 {
+  color: black;
+}
+
+.mainpagethird p {
+  font-family: "Montserrat-Regular";
+  font-size: 1em;
+  color: #888888;
+  line-height: 1.5;
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=custom.css.map */
