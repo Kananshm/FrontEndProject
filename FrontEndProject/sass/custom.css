@@ -495,7 +495,8 @@ footer .email input {
 
 .hompg3 .icon span {
   position: absolute;
-  left: 1.9em;
+  top: 0;
+  left: 2.4em;
 }
 
 .mainpagethird img {
@@ -514,5 +515,94 @@ footer .email input {
   color: #888888;
   line-height: 1.5;
   letter-spacing: 2px;
+}
+
+.bannerr {
+  background-image: url(../img/bg-banner-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.bannerr img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bannerr .shopItem {
+  position: relative;
+  width: 40%;
+}
+
+.bannerr p {
+  border: 1px solid #dbdbdb;
+  width: 2.6em;
+  padding: 4px;
+  text-align: center;
+  font-family: " Montserrat-Regular";
+  font-size: 1.2em;
+  color: #555555;
+  line-height: 1;
+  color: #999;
+}
+
+.bannerr .tms {
+  position: absolute;
+  top: 85%;
+  left: 15%;
+  width: 70%;
+}
+
+.bg-title {
+  background-image: url(../img/heading-pages-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 13em;
+}
+
+.bg-title h2 {
+  font-family: "Montserrat-Bold";
+  font-size: 4.2em;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.bg-title p {
+  font-family: "Montserrat-Regular";
+  font-size: 1.2em;
+  color: #fff;
+  line-height: 1.8;
+}
+
+.Categories h4 {
+  font-family: "Montserrat-Black";
+  font-size: 1.5em;
+  color: #333;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.Categories ul {
+  list-style-type: none;
+}
+
+.Categories li a {
+  font-family: "Montserrat-Regular";
+  font-size: 15px;
+  color: #888;
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+.Categories li a:hover {
+  color: #e67e22;
 }
 /*# sourceMappingURL=custom.css.map */

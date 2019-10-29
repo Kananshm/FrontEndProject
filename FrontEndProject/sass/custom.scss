@@ -446,7 +446,9 @@ footer {
     }
     span {
       position: absolute;
-      left: 1.9em;
+      top:0;
+      left: 2.4em;
+   
     }
   }
 }
@@ -468,6 +470,88 @@ footer {
     letter-spacing: 2px;
   }
 }
+.bannerr{
+  background-image: url(../img/bg-banner-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  img{
+    width: 100%;
+    object-fit: cover;
+    
+  }
+  .shopItem{
+    position: relative;
+    width: 40%;
+  }
+  p{
+    border: 1px solid #dbdbdb;
+    width: 2.6em;
+    padding: 4px;
+    text-align: center;
+    font-family: " Montserrat-Regular";
+    font-size: 1.2em;
+    color: #555555;
+    line-height: 1;
+    color: #999;
+  
+  }
+  .tms{
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    width: 70%;
+  }
+}
+
+.bg-title{
+  background-image: url(../img/heading-pages-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 13em;
+  h2{
+    font-family: "Montserrat-Bold";
+    font-size: 4.2em;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  p{
+    font-family: "Montserrat-Regular";
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 1.8;
+  }
+}
+.Categories{
+  h4{
+    font-family: "Montserrat-Black";
+    font-size: 1.5em;
+    color: #333;
+    line-height: 2;
+    font-weight: bold;
+  }
+  ul{
+    list-style-type: none;
+  }
+  li{
+    a{
+      font-family: "Montserrat-Regular";
+      font-size: 15px;
+      color: #888;
+      line-height: 1.8;
+      text-decoration: none;
+      &:hover{
+        color: #e67e22
+      }
+    }
+  }
+}
+
+
+
 // .bbb{
 //     transition-duration: 0.5s;
 // .nxt{
