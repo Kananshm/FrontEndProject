@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="sass/custom.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
@@ -123,49 +125,340 @@
     <div class="container">
         <div class="row">
             <aside class="col-lg-3 mt-5 Categories">
-             <h4>
-                 Categories
-             </h4>
-             <ul>
-                 <li><a href="#"> All </a></li>
-                 <li><a href="#"> Women </a></li>
-                 <li><a href="#"> Men </a></li>
-                 <li><a href="#"> Kids </a></li>
-                 <li><a href="#"> Accesories </a></li>
-             </ul>
-                
+                <h4>
+                    Categories
+                </h4>
+                <ul>
+                    <li><a href="#"> All </a></li>
+                    <li><a href="#"> Women </a></li>
+                    <li><a href="#"> Men </a></li>
+                    <li><a href="#"> Kids </a></li>
+                    <li><a href="#"> Accesories </a></li>
+                </ul>
+
                 <h4>Filters</h4>
                 <hr>
+                <h5>
+                    Price
+                </h5>
+                <div>
+                    <p>
+                        <label for="amount"></label>
+                        <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                    </p>
+
+                    <div id="slider-range"></div>
+                    <button class=" mt-3 filter">Filter</button>
+                </div>
+                <hr>
+
+                <h5>
+                    Color
+                </h5>
+                <div class="colors">
+                    <ul class="d-flex togl">
+                        <li>
+                            <input class="checkbox-color-filter" type="checkbox" name="color-filter1">
+                            <label class="color-filter grey" for="grey"></label>
+                        </li>
+                        <li>
+                            <input class="checkbox-color-filter" type="checkbox" name="color-filter2">
+                            <label class="color-filter green" for="green"></label>
+                        </li>
+                        <li>
+                            <input class="checkbox-color-filter" type="checkbox" name="color-filter3">
+                            <label class="color-filter yellow" for="yellow"></label>
+                        </li>
+                        <li>
+                            <input class="checkbox-color-filter" type="checkbox" name="color-filter4">
+                            <label class="color-filter white" for="white"></label>
+                        </li>
+                        <li>
+                            <input class="checkbox-color-filter" type="checkbox" name="color-filter5">
+                            <label class="color-filter black" for="black"></label>
+                        </li>
+                        <li>
+                            <input class="checkbox-color-filter" type="checkbox" name="color-filter6">
+                            <label class="color-filter blue" for="blue"></label>
+                        </li>
+                        <li>
+                            <input class="checkbox-color-filter" type="checkbox" name="color-filter7">
+                            <label class="color-filter red" for="red"></label>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="input-group">
+                    <input class="form-control py-2 border-right-0 border" type="search" value="search"
+                        id="example-search-input">
+                    <span class="input-group-append">
+                        <div class="input-group-text bg-transparent"><i class="fa fa-search"></i></div>
+                    </span>
+                </div>
+
+
+
+
             </aside>
             <section class="col-lg-9 mt-5">
-                    <div class="dropdown mt-2">
-                            <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Default Sorting
-                            </a>
-                          
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <a class="dropdown-item" href="#">Popularity</a>
-                              <a class="dropdown-item" href="#">Price:lowto high</a>
-                              <a class="dropdown-item" href="#">Price:high to low</a>
-                            </div>
-                          </div>
-                          <div class="dropdown">
-                                <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Price 
-                                </a>
-                              
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                  <a class="dropdown-item" href="#">$0.00 - $50.00</a>
-                                  <a class="dropdown-item" href="#">$50.00 - $100.00</a>
-                                  <a class="dropdown-item" href="#">100.00 - 10.0000</a>
-                                </div>
-                              </div>
+                <div class="d-flex justify-content-between ">
 
-                              
+                    <div>
+                        <div class="dropdown mt-2">
+                            <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Default Sorting
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Popularity</a>
+                                <a class="dropdown-item" href="#">Price:lowto high</a>
+                                <a class="dropdown-item" href="#">Price:high to low</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Price
+                            </a>
+
+                            <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">$0.00 - $50.00</a>
+                                <a class="dropdown-item" href="#">$50.00 - $100.00</a>
+                                <a class="dropdown-item" href="#">100.00 - 10.0000</a>
+                                <a class="dropdown-item" href="#">20.000+</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <p class="mt-2">
+                            Showing 1–12 of 16 results
+                        </p>
+                    </div>
+
+                </div>
+
+                <section>
+
+
+                    <div class="row mt-5">
+                        <div class="featured d-flex ">
+                            <div class="col-md-4 item frstpic">
+                                <img src="img/item-02.jpg" alt="">
+                                <span class="news"> New </span>
+                                <a href="#" class="mt-3">
+                                    Herschel supply 25l
+                                </a>
+                                <span class="mny">$75.00</span>
+                            </div>
+                            <div class="col-md-4 item frstpic">
+                                <img src="img/item-03.jpg" alt="">
+                                <!-- <span class="news"> New </span> -->
+                                <a href="#" class="mt-3">
+                                    Herschel supply 25l
+                                </a>
+                                <span class="mny">$75.00</span>
+                            </div>
+                            <div class="col-md-4 item frstpic">
+                                <img src="img/item-12.jpg" alt="">
+                                <span class="sale"> Sale </span>
+                                <a href="#" class="mt-3">
+                                    Herschel supply 25l
+                                </a>
+                                <span class="mny">$75.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="featured d-flex ">
+                            <div class="col-md-4 item frstpic">
+                                <img src="img/item-05.jpg" alt="">
+                                <span class="news"> New </span>
+                                <a href="#" class="mt-3">
+                                    Herschel supply 25l
+                                </a>
+                                <span class="mny">$75.00</span>
+                            </div>
+                            <div class="col-md-4 item frstpic">
+                                <img src="img/item-14.jpg" alt="">
+                                <!-- <span class="news"> New </span> -->
+                                <a href="#" class="mt-3">
+                                    Herschel supply 25l
+                                </a>
+                                <span class="mny">$75.00</span>
+                            </div>
+                            <div class="col-md-4 item frstpic">
+                                <img src="img/item-10.jpg" alt="">
+                                <span class="sale"> Sale </span>
+                                <a href="#" class="mt-3">
+                                    Herschel supply 25l
+                                </a>
+                                <span class="mny">$75.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="featured d-flex ">
+                            <div class="col-md-4 item frstpic">
+                                <img src="img/item-03.jpg" alt="">
+                                <span class="news"> New </span>
+                                <a href="#" class="mt-3">
+                                    Herschel supply 25l
+                                </a>
+                                <span class="mny">$75.00</span>
+                            </div>
+                            <div class="col-md-4 item frstpic">
+                                <img src="img/item-05.jpg" alt="">
+                                <!-- <span class="news"> New </span> -->
+                                <a href="#" class="mt-3">
+                                    Herschel supply 25l
+                                </a>
+                                <span class="mny">$75.00</span>
+                            </div>
+                            <div class="col-md-4 item frstpic">
+                                <img src="img/item-07.jpg" alt="">
+                                <!-- <span class="sale"> Sale </span> -->
+                                <a href="#" class="mt-3">
+                                    Herschel supply 25l
+                                </a>
+                                <span class="mny">$75.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="featured d-flex ">
+                            <div class="col-md-4 item frstpic">
+                                <img src="img/item-08.jpg" alt="">
+                                <span class="news"> New </span>
+                                <a href="#" class="mt-3">
+                                    Herschel supply 25l
+                                </a>
+                                <span class="mny">$75.00</span>
+                            </div>
+                            <div class="col-md-4 item frstpic">
+                                <img src="img/item-14.jpg" alt="">
+                                <span class="news"> New </span>
+                                <a href="#" class="mt-3">
+                                    Herschel supply 25l
+                                </a>
+                                <span class="mny">$75.00</span>
+                            </div>
+                            <div class="col-md-4 item frstpic">
+                                <img src="img/item-10.jpg" alt="">
+                                <!-- <span class="sale"> Sale </span> -->
+                                <a href="#" class="mt-3">
+                                    Herschel supply 25l
+                                </a>
+                                <span class="mny">$75.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+                <nav class="mt-5 ml-2 actve-pagination" aria-label="...">
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">
+                                1
+                                <span class="sr-only">(current)</span>
+                            </span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                    </ul>
+                </nav>
             </section>
         </div>
     </div>
+ 
+    <footer class="mt-5">
 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 mt-5 d-flex justify-content-between pb-5">
+                        <div class="get-in-touch col-lg-4 col">
+                            <h5>GET IN TOUCH</h5>
+                            <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call
+                                us on
+                                (+1) 96 716 6879</p>
+                            <ul class="d-flex">
+                                <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="https://www.snapchat.com"><i class="fa fa-snapchat"></i></a></li>
+                                <li><a href="https://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class=" col-lg-4 d-flex justify-content-around">
+                            <div>
+                                <p class="font-weight-bold text-dark">CATEGORIES</p>
+                                <ul>
+                                    <li><a>Men</a></li>
+                                    <li><a>Women</a></li>
+                                    <li><a>Dresses</a></li>
+                                    <li><a>Sunglasses</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-weight-bold text-dark">LINKS</p>
+                                <ul>
+                                    <li><a>Search</a></li>
+                                    <li><a>About Us</a></li>
+                                    <li><a>Contact Us</a></li>
+                                    <li><a>Returns</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-weight-bold text-dark">HELP</p>
+                                <ul>
+                                    <li><a>Track Order</a></li>
+                                    <li><a>Returns</a></li>
+                                    <li><a>Shipping</a></li>
+                                    <li><a>FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+    
+                        <div class=" email col-lg-4">
+                            <div>
+                                <p class="font-weight-bold text-dark">NEWSLETTER</p>
+                                <input type="email" placeholder="email@example.com">
+                                <div class="pt-2">
+                                    <button class="btn btn-dark">SUBSCRIBE</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-12 pt-5 d-flex justify-content-center">
+                        <div>
+                            <a href="#"><img src="img/paypal.png" alt="image"></a>
+                            <a href="#"><img src="img/visa.png" alt="image"></a>
+                            <a href="#"><img src="img/mastercard.png" alt="image"></a>
+                            <a href="#"><img src="img/discover.png" alt="image"></a>
+                            <a href="#"><img src="img/express.png" alt="image"></a>
+                        </div>
+    
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-center pt-4 pb-4">
+                        <p>Copyright © 2017 Colorlib. All rights reserved.</p>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </footer>
 
 
 
@@ -181,22 +474,27 @@
         crossorigin="anonymous"></script>
     <script src="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <script src="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 4
-                },
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [50, 200],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                " - $" + $("#slider-range").slider("values", 1));
+        });
 
-            }
+
+        $('.togl li label').click(function () {
+            $(this).toggleClass('li-style')
         })
-
     </script>
 </body>
 

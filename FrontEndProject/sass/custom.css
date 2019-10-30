@@ -582,6 +582,79 @@ footer .email input {
   line-height: 1.8;
 }
 
+.Categories .filter {
+  border-radius: 15px;
+  background-color: black;
+  width: 45%;
+  height: 36px;
+  font-family: "Montserrat-Regular";
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.Categories .filter:hover {
+  background-color: #e67e22;
+}
+
+.Categories .colors ul li {
+  margin-right: 0.8em;
+}
+
+.Categories .colors ul .li-style {
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.Categories .colors .color-filter {
+  display: block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.Categories .colors .yellow {
+  background-color: yellow;
+}
+
+.Categories .colors .red {
+  background-color: red;
+}
+
+.Categories .colors .black {
+  background-color: black;
+}
+
+.Categories .colors .grey {
+  background-color: grey;
+}
+
+.Categories .colors .white {
+  background-color: #dbdbdb;
+}
+
+.Categories .colors .blue {
+  background-color: blue;
+}
+
+.Categories .colors .green {
+  background-color: green;
+}
+
+.Categories .colors .checkbox-color-filter {
+  display: none;
+}
+
+.Categories h5 {
+  font-family: 'Montserrat-Medium';
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.5;
+}
+
 .Categories h4 {
   font-family: "Montserrat-Black";
   font-size: 1.5em;
@@ -604,5 +677,32 @@ footer .email input {
 
 .Categories li a:hover {
   color: #e67e22;
+}
+
+.actve-pagination li .page-link {
+  display: inline-block;
+  background-color: #222 !important;
+  color: #fff;
+  font-family: "Montserrat-Regular";
+  font-size: 13px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50% !important;
+  border: 1px solid #eee;
+  margin: 6px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.input-group input {
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  overflow: hidden;
+  width: 74%;
+  height: 56px;
+  font-family: 'Montserrat-Regular';
+  font-size: 1em;
+  color: #555;
+  line-height: 1.8;
 }
 /*# sourceMappingURL=custom.css.map */
