@@ -649,7 +649,7 @@ footer .email input {
 }
 
 .Categories h5 {
-  font-family: 'Montserrat-Medium';
+  font-family: "Montserrat-Medium";
   font-size: 1.2em;
   color: #555;
   line-height: 1.5;
@@ -700,9 +700,130 @@ footer .email input {
   overflow: hidden;
   width: 74%;
   height: 56px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-size: 1em;
   color: #555;
   line-height: 1.8;
+}
+
+.carts .bg-title {
+  background-image: url(../img/heading-pages-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 13em;
+}
+
+.carts .bg-title h2 {
+  font-family: "Montserrat-Bold";
+  font-size: 4.2em;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.wine-page-title {
+  margin: 50px 0 75px;
+  font-family: "Cinzel", serif;
+  text-align: center;
+}
+
+.wine-page-title h1 {
+  font-size: 34px;
+  text-transform: capitalize;
+}
+
+.wine-orders .site-blocks-table {
+  overflow: auto;
+}
+
+.wine-orders .site-blocks-table .table .wine-table-title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.wine-orders .site-blocks-table .table thead th {
+  padding: 30px;
+}
+
+.wine-orders .site-blocks-table .table tbody tr td {
+  font-family: montserrat;
+  text-align: center;
+  color: #000;
+  width: 200px;
+  vertical-align: middle;
+}
+
+.wine-orders .site-blocks-table .table tbody tr td .wine-plus-minus .counter {
+  width: 50px;
+  height: 38px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.wine-orders .site-blocks-table .table tbody tr td .wine-plus-minus .up_count,
+.wine-orders .site-blocks-table .table tbody tr td .wine-plus-minus .down_count {
+  color: #930077;
+  background-color: #fff;
+  border-color: #930077;
+  font-size: 16px;
+}
+
+.wine-orders .site-blocks-table .table tbody tr td .wine-plus-minus .up_count:hover,
+.wine-orders .site-blocks-table .table tbody tr td .wine-plus-minus .down_count:hover {
+  color: #fff;
+  background-color: #930077;
+  border-color: #930077;
+}
+
+.wine-orders .site-blocks-table .table tbody tr td .wine-plus-minus .down_count {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: -5px;
+}
+
+.wine-orders .site-blocks-table .table tbody tr td .wine-plus-minus .up_count {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -4px;
+}
+
+.wine-orders .site-blocks-table .table tbody tr td .btn {
+  background-color: #930077;
+  border-color: #930077;
+  font-weight: 600;
+}
+
+.wine-submit-orders {
+  padding: 50px 0 100px;
+  margin-top: 50px;
+}
+
+.wine-submit-orders .btn-primary {
+  background-color: #930077;
+  border-color: #930077;
+  color: #fff;
+}
+
+.wine-submit-orders .btn-primary:hover {
+  color: #fff;
+  background-color: #6d0058;
+  border-color: #60004e;
+}
+
+.wine-submit-orders .btn-outline-primary {
+  border-color: #930077;
+  color: #930077;
+}
+
+.wine-submit-orders .btn-outline-primary:hover {
+  background-color: #930077;
+  border-color: #930077;
+  color: #fff;
+}
+
+.wine-submit-orders p {
+  color: gray;
 }
 /*# sourceMappingURL=custom.css.map */

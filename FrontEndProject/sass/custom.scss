@@ -446,23 +446,20 @@ footer {
     }
     span {
       position: absolute;
-      top:0;
+      top: 0;
       left: 2.4em;
-   
     }
   }
 }
-.mainpagethird{
-
-  img{
+.mainpagethird {
+  img {
     width: 100%;
     object-fit: cover;
   }
-  h2{
-    color:black;
+  h2 {
+    color: black;
   }
-  p{
-    
+  p {
     font-family: "Montserrat-Regular";
     font-size: 1em;
     color: #888888;
@@ -470,22 +467,21 @@ footer {
     letter-spacing: 2px;
   }
 }
-.bannerr{
+.bannerr {
   background-image: url(../img/bg-banner-02.jpg);
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
-  img{
+  img {
     width: 100%;
     object-fit: cover;
-    
   }
-  .shopItem{
+  .shopItem {
     position: relative;
     width: 40%;
   }
-  p{
+  p {
     border: 1px solid #dbdbdb;
     width: 2.6em;
     padding: 4px;
@@ -495,9 +491,8 @@ footer {
     color: #555555;
     line-height: 1;
     color: #999;
-  
   }
-  .tms{
+  .tms {
     position: absolute;
     top: 85%;
     left: 15%;
@@ -505,12 +500,12 @@ footer {
   }
 }
 
-.bg-title{
+.bg-title {
   background-image: url(../img/heading-pages-02.jpg);
   background-position: center;
   background-repeat: no-repeat;
   height: 13em;
-  h2{
+  h2 {
     font-family: "Montserrat-Bold";
     font-size: 4.2em;
     color: #fff;
@@ -518,15 +513,15 @@ footer {
     text-transform: uppercase;
     font-weight: bold;
   }
-  p{
+  p {
     font-family: "Montserrat-Regular";
     font-size: 1.2em;
     color: #fff;
     line-height: 1.8;
   }
 }
-.Categories{
-  .filter{
+.Categories {
+  .filter {
     border-radius: 15px;
     background-color: black;
     width: 45%;
@@ -535,119 +530,230 @@ footer {
     font-size: 13px;
     color: #fff;
     text-transform: uppercase;
-    &:hover{
+    &:hover {
       background-color: #e67e22;
     }
   }
-  .colors{
-    ul{
-      li{
+  .colors {
+    ul {
+      li {
         margin-right: 0.8em;
       }
-    .li-style{
+      .li-style {
+        width: 25px;
+        height: 25px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+    }
+    .color-filter {
+      display: block;
       width: 25px;
       height: 25px;
-      border: 1px solid black;
-      border-radius:50%; 
+      cursor: pointer;
+      border-radius: 50%;
     }
-    
+    .yellow {
+      background-color: yellow;
+    }
+    .red {
+      background-color: red;
+    }
+    .black {
+      background-color: black;
+    }
+    .grey {
+      background-color: grey;
+    }
+    .white {
+      background-color: #dbdbdb;
+    }
+    .blue {
+      background-color: blue;
+    }
+    .green {
+      background-color: green;
+    }
+    .checkbox-color-filter {
+      display: none;
+    }
   }
-.color-filter{
-   display: block;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-.yellow{
-  background-color: yellow;
-}
-.red{
-  background-color: red;
-}
-.black{
-  background-color: black;
-}
-.grey{
-  background-color: grey;
-}
-.white{
-  background-color: #dbdbdb;
-}
-.blue{
-background-color: blue;
-}
-.green{
-  background-color: green;
-}
-.checkbox-color-filter {
-  display: none;
-}
-   
-
-  }
-  h5{
-    font-family: 'Montserrat-Medium';
+  h5 {
+    font-family: "Montserrat-Medium";
     font-size: 1.2em;
     color: #555;
     line-height: 1.5;
   }
-  h4{
+  h4 {
     font-family: "Montserrat-Black";
     font-size: 1.5em;
     color: #333;
     line-height: 2;
     font-weight: bold;
   }
-  ul{
+  ul {
     list-style-type: none;
   }
-  li{
-    a{
+  li {
+    a {
       font-family: "Montserrat-Regular";
       font-size: 15px;
       color: #888;
       line-height: 1.8;
       text-decoration: none;
-      &:hover{
-        color: #e67e22
+      &:hover {
+        color: #e67e22;
       }
     }
   }
 }
 
-.actve-pagination
-{
-  li{
-    .page-link{
-    display:inline-block;
-    background-color: #222 !important;
-    color: #fff;
-    font-family: "Montserrat-Regular";
-    font-size: 13px;
-    width: 36px;
-    height: 36px;
-    border-radius: 50% !important;
-    border: 1px solid #eee;
-    margin: 6px;
-    text-decoration: none;
-    text-align: center;    
+.actve-pagination {
+  li {
+    .page-link {
+      display: inline-block;
+      background-color: #222 !important;
+      color: #fff;
+      font-family: "Montserrat-Regular";
+      font-size: 13px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50% !important;
+      border: 1px solid #eee;
+      margin: 6px;
+      text-decoration: none;
+      text-align: center;
     }
   }
 }
-.input-group{
-
-input{
-  border: 1px solid #e6e6e6;
+.input-group {
+  input {
+    border: 1px solid #e6e6e6;
     border-radius: 2px;
     overflow: hidden;
     width: 74%;
     height: 56px;
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-size: 1em;
     color: #555;
     line-height: 1.8;
+  }
 }
+.carts {
+  .bg-title {
+    background-image: url(../img/heading-pages-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 13em;
+    h2 {
+      font-family: "Montserrat-Bold";
+      font-size: 4.2em;
+      color: #fff;
+      line-height: 1.2;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
+.wine-page-title {
+  margin: 50px 0 75px;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  h1 {
+    font-size: 34px;
+    text-transform: capitalize;
+  }
+}
+
+.wine-orders {
+  .site-blocks-table {
+    overflow: auto;
+    .table {
+      .wine-table-title {
+        text-align: center;
+        font-weight: normal;
+        font-size: 18px;
+      }
+      thead {
+        th {
+          padding: 30px;
+        }
+      }
+      tbody {
+        tr {
+          td {
+            font-family: montserrat;
+            text-align: center;
+            color: #000;
+            width: 200px;
+            vertical-align: middle;
+            .wine-plus-minus {
+              .counter {
+                width: 50px;
+                height: 38px;
+                text-align: center;
+                font-size: 16px;
+              }
+              .up_count,
+              .down_count {
+                color: #930077;
+                background-color: #fff;
+                border-color: #930077;
+                font-size: 16px;
+                &:hover {
+                  color: #fff;
+                  background-color: #930077;
+                  border-color: #930077;
+                }
+              }
+              .down_count {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                margin-right: -5px;
+              }
+              .up_count {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                margin-left: -4px;
+              }
+            }
+            .btn {
+              background-color: #930077;
+              border-color: #930077;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wine-submit-orders {
+  padding: 50px 0 100px;
+  margin-top: 50px;
+  .btn-primary {
+    background-color: #930077;
+    border-color: #930077;
+    color: #fff;
+    &:hover {
+      color: #fff;
+      background-color: #6d0058;
+      border-color: #60004e;
+    }
+  }
+  .btn-outline-primary {
+    border-color: #930077;
+    color: #930077;
+    &:hover {
+      background-color: #930077;
+      border-color: #930077;
+      color: #fff;
+    }
+  }
+  p {
+    color: gray;
+  }
 }
 
 // .bbb{
