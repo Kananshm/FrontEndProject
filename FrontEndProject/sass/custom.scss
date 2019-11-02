@@ -241,6 +241,42 @@
     }
   }
 }
+.text-align {
+  text-align: center;
+  margin: 5em 0;
+  .shipping {
+    padding: 1.5em 0;
+    text-align: center;
+    h4 {
+      font-size: 1.4em;
+      color: #555;
+      line-height: 1.5;
+      text-align: center;
+    }
+    a {
+      font-size: 1em;
+      color: #888;
+      line-height: 1.8;
+      text-align: center;
+      text-decoration: none;
+      transition-duration: 0.8s;
+    }
+    a:hover{
+      color: #e65540;
+    }
+  }
+  .borders{
+    border-right:1px solid #999;
+    border-left: 1px solid #999;
+  }
+  @media screen and(max-width:580px){
+    .borders{
+      border: none;
+      border-top: 1px solid #999;
+      border-bottom: 1px solid #999;
+    }
+  }
+}
 .dollar {
   position: absolute;
   top: 61%;
@@ -878,7 +914,46 @@ margin-left: 25px;
     }
   }
   
-
+  .abouts {
+    .bg-title {
+      background-image: url(../img/heading-pages-06.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 13em;
+      h2 {
+        font-family: Montserrat-Bold;
+        font-size: 50px;
+        color: #fff;
+        line-height: 1.2;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .our-story {
+    img {
+      width: 100%;
+    }
+  
+    .steve-jobs {
+      border-left: 3px solid #e6e6e6;
+    }
+  }
+  .img img:hover {
+    transform: scale(1.1);
+    transition:  0.4s linear;
+  }
+  
+  .img {
+    overflow: hidden;
+  }
+  
+  .thebeauty{
+    background-image: url(../img/bg-video-01.jpg);
+    background-attachment: fixed;
+    height: 600px;
+    object-fit: cover;
+    overflow: hidden;
+  }
 
 
 // .bbb{

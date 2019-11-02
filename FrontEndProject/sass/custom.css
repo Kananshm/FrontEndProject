@@ -274,6 +274,50 @@
   letter-spacing: 2px;
 }
 
+.text-align {
+  text-align: center;
+  margin: 5em 0;
+}
+
+.text-align .shipping {
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+.text-align .shipping h4 {
+  font-size: 1.4em;
+  color: #555;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.text-align .shipping a {
+  font-size: 1em;
+  color: #888;
+  line-height: 1.8;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.text-align .shipping a:hover {
+  color: #e65540;
+}
+
+.text-align .borders {
+  border-right: 1px solid #999;
+  border-left: 1px solid #999;
+}
+
+@media screen and (max-width: 580px) {
+  .text-align .borders {
+    border: none;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+  }
+}
+
 .dollar {
   position: absolute;
   top: 61%;
@@ -950,5 +994,48 @@ footer .email input {
   right: 5%;
   width: 30px;
   height: 30px;
+}
+
+.abouts .bg-title {
+  background-image: url(../img/heading-pages-06.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 13em;
+}
+
+.abouts .bg-title h2 {
+  font-family: Montserrat-Bold;
+  font-size: 50px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.our-story img {
+  width: 100%;
+}
+
+.our-story .steve-jobs {
+  border-left: 3px solid #e6e6e6;
+}
+
+.img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+}
+
+.img {
+  overflow: hidden;
+}
+
+.thebeauty {
+  background-image: url(../img/bg-video-01.jpg);
+  background-attachment: fixed;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }
 /*# sourceMappingURL=custom.css.map */
