@@ -75,7 +75,7 @@
   font-size: 12px;
   position: absolute;
   top: 10px;
-  right: 103px;
+  right: 155px;
 }
 
 .imgs img {
@@ -996,6 +996,21 @@ footer .email input {
   height: 30px;
 }
 
+.blog-featur li {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-featur li a {
+  display: inline-block;
+  width: 50%;
+}
+
+.blog-featur li div {
+  display: inline;
+}
+
 .abouts .bg-title {
   background-image: url(../img/heading-pages-06.jpg);
   background-position: center;
@@ -1037,5 +1052,163 @@ footer .email input {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+}
+
+.archive {
+  margin: 4em 0;
+}
+
+.archive h2 {
+  color: #333333;
+  font-weight: bolder;
+  margin: 1em 0;
+}
+
+.archive ul, .archive li {
+  padding: 0;
+}
+
+.archive ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.archive ul a {
+  color: #959595;
+  text-decoration: none;
+  font-size: 1.3em;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.archive ul a:hover {
+  color: #e65540;
+}
+
+.archive ul li {
+  color: #959595;
+}
+
+.tags {
+  margin: 4em 0;
+}
+
+.tags h2 {
+  color: #333333;
+  font-weight: bolder;
+  margin: 1em 0;
+}
+
+.tags button {
+  background-color: #fff !important;
+  color: #CCCCCC !important;
+  border: 1px solid #CCCCCC !important;
+  margin: 0.5em 0;
+  border-radius: 25px !important;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.tags button:hover {
+  border-color: #e65540 !important;
+  color: #e65540 !important;
+}
+
+.contacts .bg-title {
+  background-image: url(../img/heading-pages-06.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 13em;
+}
+
+.contacts .bg-title h2 {
+  font-family: Montserrat-Bold;
+  font-size: 50px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.contact-page {
+  margin: 6em 0;
+}
+
+.contact-page .map {
+  margin: 1em 0;
+  padding: 0;
+  background-color: #000;
+  height: 600px;
+}
+
+.contact-page .map iframe {
+  height: 600px;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.contact-page .contact-form form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-page .contact-form form div label {
+  font-size: 25px;
+  margin: 1em 0;
+}
+
+.contact-page .contact-form form div input {
+  height: 60px;
+  margin-bottom: 1em;
+  border: 1.5px solid #e6e6e6;
+  padding: 0 1em;
+}
+
+.contact-page .contact-form form div textarea {
+  border: 1.5px solid #e6e6e6;
+  padding: 0 1em;
+  margin-bottom: 1em;
+}
+
+.contact-page .contact-form form div ::-webkit-input-placeholder {
+  padding-left: 0.5em;
+}
+
+.contact-page .contact-form form div :-ms-input-placeholder {
+  padding-left: 0.5em;
+}
+
+.contact-page .contact-form form div ::-ms-input-placeholder {
+  padding-left: 0.5em;
+}
+
+.contact-page .contact-form form div ::placeholder {
+  padding-left: 0.5em;
+}
+
+.contact-page .contact-form form button {
+  height: 50px;
+  width: 25%;
+  border-radius: 25px;
+  background-color: #222222;
+  color: #fff;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.contact-page .contact-form form button:hover {
+  background-color: #e65540;
 }
 /*# sourceMappingURL=custom.css.map */

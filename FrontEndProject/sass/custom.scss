@@ -59,7 +59,7 @@
   font-size: 12px;
   position: absolute;
   top: 10px;
-  right: 103px;
+  right:155px;
 }
 .imgs {
   img {
@@ -913,6 +913,18 @@ margin-left: 25px;
       height: 30px;
     }
   }
+  .blog-featur{
+    li{
+      justify-content: space-between;
+      a{
+        display: inline-block;
+        width: 50%;
+      }
+      div{
+        display: inline;
+      }
+    }
+  }
   
   .abouts {
     .bg-title {
@@ -955,6 +967,124 @@ margin-left: 25px;
     overflow: hidden;
   }
 
+  .archive {
+    margin: 4em 0;
+    h2 {
+      color: #333333;
+      font-weight: bolder;
+      margin: 1em 0;
+    }
+    ul,li{
+      padding: 0;
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      a{
+        color: #959595;
+        text-decoration: none;
+        font-size: 1.3em;
+        transition-duration: 0.8s;
+      }
+      a:hover{
+        color: #e65540;
+      }
+      li{
+        color: #959595;
+      }
+    }
+  }
+  .tags{
+    margin: 4em 0;
+    h2{
+      color: #333333;
+      font-weight: bolder;
+      margin: 1em 0;
+    }
+    button{
+    background-color: #fff !important;
+    color: #CCCCCC !important;
+    border: 1px solid #CCCCCC !important;
+    margin: 0.5em 0;
+    border-radius: 25px !important;
+    transition-duration: 0.6s;
+    }
+    button:hover{
+      border-color: #e65540 !important;
+      color: #e65540 !important;
+    }
+  }
+  .contacts {
+    .bg-title {
+      background-image: url(../img/heading-pages-06.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 13em;
+      h2 {
+        font-family: Montserrat-Bold;
+        font-size: 50px;
+        color: #fff;
+        line-height: 1.2;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .contact-page {
+    margin: 6em 0;
+    .map {
+      margin: 1em 0;
+      padding: 0;
+      background-color: #000;
+      height: 600px;
+      iframe {
+        height: 600px;
+        width: 100%;
+        opacity: 0.7;
+      }
+    }
+    .contact-form {
+      form {
+        div {
+          display: flex;
+          flex-direction: column;
+          label {
+            font-size: 25px;
+            margin: 1em 0;
+          }
+          input {
+            height: 60px;
+            margin-bottom: 1em;
+            border: 1.5px solid #e6e6e6;
+            padding: 0 1em;
+          }
+          textarea {
+            border: 1.5px solid #e6e6e6;
+            padding: 0 1em;
+            margin-bottom: 1em;
+          }
+          ::placeholder {
+            padding-left: 0.5em;
+          }
+        }
+        button {
+          height: 50px;
+          width: 25%;
+          border-radius: 25px;
+          background-color: #222222;
+          color: #fff;
+          font-size: 25px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          transition-duration: 0.8s;
+        }
+        button:hover {
+          background-color: #e65540;
+        }
+      }
+    }
+  }
 
 // .bbb{
 //     transition-duration: 0.5s;
